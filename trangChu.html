@@ -2,39 +2,44 @@
 <html lang="vi">
     <head>
         <meta charset="UTF-8">
-        <little>trangChu</little>
-
+        <title>trangChu</title>
+        <link rel="stylesheet" href="trangChu.css">
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">Giới Thiệu</a></li>
-                    <li><a href="#skills">Kỹ Năng</a></li>
-                    <li><a href="#projects">Dự Án</a></li>
-                    <li><a href="#contact">Liên Hệ</a></li>
-                </ul>
+            <p>Nguyễn Ngọc Ánh</p>
+            <nav class="menu">
+                <a href="#about" >Giới Thiệu</a>
+                <a href="#skills">Kỹ Năng</a>
+                <a href="#projects">Dự Án</a>
+                <a href="#contact">Liên Hệ</a>
+                
             </nav>
         </header>
         <main>
-            <section id="about">
+            <section id="about" >
                 <img src="anime picture.jpg" alt="ảnh">
-                <h1>Xin chào, mình là <strong> Nguyễn Ngọc Ánh</strong> một sinh viên năm 2 tại PTIT</h1> 
+                <span class="gioi-thieu">
+                    <h1>Xin chào, mình là <strong> Nguyễn Ngọc Ánh</strong> một sinh viên năm 2 tại PTIT</h1> 
+                    <p>Mình yêu thích lập trình web và đang học HTML, CSS, JavaScript và các công nghệ liên quan. Dưới đây là một vài thông tin về mình. Hy vọng bạn sẽ dành một chút thời gian để đọc. Cảm ơn mọi người ^.^ !</p>
+                </span>
             </section>
 
             <section id="skills">
                 <h2>Mình có một vài kĩ năng nhỏ sau</h2>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                </ul>
+                <span class="skill-item">
+                    <p>HTML & CSS</p>
+                    <p>JavaScript</p>
+                    <p>Java</p>
+                    <p>Python</p>
+                </span>
             </section>
 
             <section id="projects">
-                <h2>Các dự đã làm</h2>
-                <p>Mình đã làm được một vài dự án nhỏ như là</p>
+                <span class="tieu-de">
+                    <h2>Các dự đã làm</h2>
+                    <p>-- Mình đã làm được một vài dự án nhỏ như là -- </p>
+                </span> 
                 <span class="project-item">
                     <h4>Dự án 1: Website quản lý chi tiêu</h4>
                     <p>Mình sử dụng HTML5, CSS và JavaScript để viết được trang web này. Nhằm đáp ứng cho xu thế hiện đại, với việc mua sắm trở nên phổ biến dẫn đến khó kiểm soát chi tiêu. Và mỗi tháng đều rơi vào vòng lặp tiêu tiền một cách phung phí.</p>
@@ -54,14 +59,22 @@
                 <p>Nếu bạn muốn làm quen, hãy liên hệ với mình thông qua: </p>
                 <ul>
                     <li>Email: <a href="nanh40612@gmail.com">nanh40612@gmail.com</a></li>
-                    <li>Số điện thoại: 0389 395 219<li>
+                    <li>Số điện thoại: 0389 395 219</li>
                     <li>GitHub: <a href="https://github.com" target="_blank">https://github.com/NguyenNgocAnh-04 </a> </li>
                 </ul>
+                <p>Form liên hệ:</p>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên của bạn" required>
+                        </div>
+                    </form>
             </section>
 
         </main>
     </body>
-    <footer>
+    <footer class="chan-trang">
         <p>&copy; 2026 Nguyễn Ngọc Ánh. Bản quyền thuộc về tác giả.</p>
     </footer>
+    <script src="trangChu.js"></script>
 </html>
